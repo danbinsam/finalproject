@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+    <title>Contact | King Agency</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="Asset/Logo/King&Agency.svg" alt="King&Agency" width="80" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="partners.html">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="display-4">Contact Us</h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <form class="needs-validation" novalidate>
+        <div class="row g-3 mb-3">
+          <div class="col-lg-8">
+            <label for="fullname" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullname" placeholder="" value="" required />
+            <div class="invalid-feedback">Valid fullname is required.</div>
+          </div>
+
+          <div class="col-lg-4">
+            <label for="nickname" class="form-label">Nickname</label>
+            <input type="text" class="form-control" id="nickname" placeholder="" value="" required />
+            <div class="invalid-feedback">Valid nickname is required.</div>
+          </div>
+
+          <div class="col-lg-12">
+            <label for="Brand" class="form-label">Brand Name</label>
+            <input type="text" class="form-control" id="Brand" placeholder="" value="" required />
+            <div class="invalid-feedback">Valid Brand Name is required.</div>
+          </div>
+
+          <div class="col-lg-12">
+            <label for="Email" class="form-label">Email</label>
+            <input type="text" class="form-control" id="Email" placeholder="" value="" required />
+            <div class="invalid-feedback">Valid Email is required.</div>
+          </div>
+
+          <div class="col-lg-12">
+            <label for="Phone Number" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="Phone Number" placeholder="" value="" required />
+            <div class="invalid-feedback">Valid Phone Number is required.</div>
+          </div>
+
+          <div class="col-md-12" width="100%">
+            <label for="Pesan" class="form-label">Message</label>
+            <textarea class="form-control" id="Pesan" rows="6"></textarea>
+          </div>
+        </div>
+
+        <button class="w-100 btn btn-primary" type="submit">Send Now</button>
+      </form>
+    </div>
+
+    <footer class="bg-dark mt-5 p-md-4" data-bs-theme="dark">
+      <div class="container" style="display: flex; align-items: center; justify-content: space-between">
+        <a class="navbar-brand" href="index.html">
+          <img src="Asset/Logo/King&Agency.svg" alt="King&Agency" width="80" />
+        </a>
+        <p class="fs-6" style="text-align: right; margin-left: 50px; margin-right: 0"><br />Jl.123 Condong Catur, Depok, Sleman <br />hello@kingagency.com</p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

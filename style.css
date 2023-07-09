@@ -1,0 +1,59 @@
+nav {
+  font-family: "Libre Baskerville", serif;
+  color: white;
+}
+
+footer {
+  font-family: "Libre Baskerville", serif;
+  color: rgb(145, 145, 145);
+}
+
+.bg-body-secondary {
+  background-size: cover;
+  background-position: center;
+  height: 560px;
+}
+
+.display-3 {
+  font-family: "Libre Baskerville", serif;
+  color: white;
+  line-height: 1.35;
+}
+
+.display-4 {
+  font-family: "Libre Baskerville", serif;
+}
+
+.card-title {
+  font-family: "Libre Baskerville", serif;
+}
+
+h5,
+h2 {
+  font-family: "Libre Baskerville", serif;
+}
+
+.btn,
+.card,
+.form,
+.form-control,
+.card-img-top {
+  border-radius: 0;
+}
+
+.card-img-top {
+  height: 320px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: #ba8549;
+  border: 0;
+  font-family: "Libre Baskerville", serif;
+  color: white;
+  font-size: x-large;
+}
+
+.btn-primary:hover {
+  background-color: #6d4a23;
+}

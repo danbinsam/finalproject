@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+    <title>Portfolio | King Agency</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="Asset/Logo/King&Agency.svg" alt="King&Agency" width="80" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="partners.html">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="display-4">Our Portfolio</h1>
+        </div>
+      </div>
+    </section>
+
+    <div style="width: 100%">
+      <div class="container-md">
+        <h2 class="fw-semibold mb-4" style="text-align: center; padding: 1%">Content Creating</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="Asset/Photo/Partners/Anya Geraldine_01.jpg" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="Asset/Photo/Partners/Anya Geraldine_02.jpg" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="Asset/Photo/Partners/Anastasyah Kosasih_04.jpg" class="card-img-top" alt="..." />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br /><br />
+      <div class="container-md">
+        <h2 class="fw-semibold mb-4" style="text-align: center; padding: 1%">KOL Management</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="Asset/Photo/Partners/Nora Alexandra_03.jpg" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="Asset/Photo/Partners/Aura Kasih_02.jpg" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="Asset/Photo/Partners/Tante Ernie_02.jpg" class="card-img-top" alt="..." />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <div class="container-md">
+        <h2 class="fw-semibold mb-4" style="text-align: center; padding: 1%">Social Media Management</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="Asset/Photo/Partners/Anastasyah Kosasih_01.jpg" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="Asset/Photo/Partners/Berliana Lovel_02.jpg" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="Asset/Photo/Partners/Erika Carlina_02.jpg" class="card-img-top" alt="..." />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <footer class="bg-dark mt-5 p-md-4" data-bs-theme="dark">
+      <div class="container" style="display: flex; align-items: center; justify-content: space-between">
+        <a class="navbar-brand" href="index.html">
+          <img src="Asset/Logo/King&Agency.svg" alt="King&Agency" width="80" />
+        </a>
+        <p class="fs-6" style="text-align: right; margin-left: 50px; margin-right: 0"><br />Jl.123 Condong Catur, Depok, Sleman <br />hello@kingagency.com</p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#recipeCarousel").carousel({
+          interval: 10000,
+        });
+
+        var minPerSlide = 3;
+        var carouselItems = $(".carousel-item");
+
+        carouselItems.each(function () {
+          var next = $(this).next();
+
+          if (!next.length) {
+            next = $(this).siblings(":first");
+          }
+
+          for (var i = 0; i < minPerSlide; i++) {
+            if (next.length) {
+              next.children(":first-child").clone().appendTo($(this));
+              next = next.next();
+            } else {
+              $(this).siblings(":first").children(":first-child").clone().appendTo($(this));
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
